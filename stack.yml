@@ -46,7 +46,7 @@ services:
       - ./backups/ctecsas/otrs:/var/otrs/backups
       - '/etc/localtime:/etc/localtime:ro'
     env_file:
-      - .env
+      - otrs.env
     networks:
      - traefik_proxy
     restart: always
