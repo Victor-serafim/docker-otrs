@@ -1,4 +1,3 @@
-  GNU nano 4.8                                                              Dockerfile                                                                        
 FROM mariadb:10.1
 LABEL maintainer="Victor Serafim <victorserafim@nasajon.com.br>"
 ENV MYSQL_ROOT_PASSWORD CaracaBanco
