@@ -1,4 +1,3 @@
-  GNU nano 4.8                                                              Dockerfile                                                                        
 #OTRS ticketing system docker image.
 FROM centos:7
 LABEL maintainer="Victor Serafim <victorserafim@nasajon.com.br>"
