@@ -26,6 +26,8 @@ services:
 # Serviço de configuração maridadb(MySQL)
   mariadb:
     image: juanluisbaptiste/otrs-mariadb:latest
+    ports:
+      - '3306:3306'
     expose:
       - "3306"
     env_file: otrs.env
@@ -35,6 +37,8 @@ services:
 # Serviço de configuração do Postfix
   postfix:
      image: juanluisbaptiste/postfix:latest
+     ports:
+       - '25:25'
      expose:
        - '25'
-     env_file: otrs.env
+       

@@ -1,6 +1,7 @@
+  GNU nano 4.8                                                              Dockerfile                                                                        
 FROM mariadb:10.1
 LABEL maintainer="Victor Serafim <victorserafim@nasajon.com.br>"
-ENV MYSQL_ROOT_PASSWORD changeme
+ENV MYSQL_ROOT_PASSWORD CaracaBanco
 
 #mariadb image runs as mysql user (uid 27) but we need to do some configuration
 #changes so we need to temporarly switch to root

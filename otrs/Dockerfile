@@ -1,3 +1,4 @@
+  GNU nano 4.8                                                              Dockerfile                                                                        
 #OTRS ticketing system docker image.
 FROM centos:7
 LABEL maintainer="Victor Serafim <victorserafim@nasajon.com.br>"
@@ -61,5 +62,5 @@ RUN mv ${OTRS_CONFIG_DIR} / && \
     ln -sf /dev/stdout /var/log/httpd/access_log && \
     ln -sf /dev/stderr /var/log/httpd/error_log && \
     ln -sf /dev/stdout /var/log/cron
-EXPOSE 80
+EXPOSE 8080
 CMD ["/run.sh"]
